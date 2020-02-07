@@ -1,5 +1,4 @@
 sudo: required
-language: node_js
 node_js:
   - 10
 services:
@@ -7,4 +6,4 @@ services:
 before_install:
   - docker build -t anastayaa/docker-react -f Dockerfile .
 script:
-  - docker run anastayaa/docker-react npm run test -- --coverage
+  - docker run anastayaa/docker-react npm run test
